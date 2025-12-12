@@ -3,7 +3,7 @@ const menuNav = document.querySelector(".navbar");
 const menuNavigation = document.querySelector(".menu");
 const buttons = document.querySelectorAll(".details-btn");
 const closes = document.querySelectorAll(".popup .close");
-
+const pastelHover = document.querySelectorAll(".pastel-hover span");
 
 menuBar.addEventListener("click", () => {
   menuBar.classList.toggle("is-active");
@@ -52,3 +52,20 @@ window.addEventListener("click", function(e) {
     e.target.style.display = "none";
   }
 });
+
+
+  function pastelColor() {
+    const hue = Math.floor(Math.random() * 360);
+    return `hsl(${hue}, 70%, 80%)`; 
+  }
+
+  pastelHover.forEach(word => {
+    word.addEventListener("mouseover", () => {
+      word.style.color = pastelColor();
+    });
+
+    word.addEventListener("mouseout", () => {
+      word.style.color = "";
+    });
+  });
+
