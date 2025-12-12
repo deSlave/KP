@@ -144,8 +144,23 @@
   color: var(--secondary-text-color-opacity);
   text-align: center;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 55px;
   --animate-delay: 3.4s;
+}
+
+.pastel-hover span {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+.header .header-box .title h2{
+  color: var(--secondary-text-color-opacity);
+  text-align: center;
+  font-weight: 900;
+  font-size: 35px;
+  --animate-delay: 3.4s;
+  padding-top: 10px;
 }
 
 .header .header-box .title p {
@@ -153,7 +168,7 @@
   font-size: large;
   font-weight: 500;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
   line-height: 1.8;
   --animate-delay: 3s;
 }
@@ -251,12 +266,6 @@
   margin-bottom: 20px;
 }
 
-/*.about .info .box h1 {
-  font-size: 50px;
-  color: var(--secondary-color);
-}
-*/
-
 .about .info .box button {
   width: 100px;
   height: 30px;
@@ -343,24 +352,6 @@
   to { opacity: 1; transform: scale(1); }
 }
 
-
-.partners {
-  padding-top: 100px;
-  padding-bottom: 10px;
-  background-color: var(--primary-color);
-}
-
-.partners .partners-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-}
-
-.partners .partners-box h1 {
-  color: rgba(255, 255, 255, 0.1);
-}
-
 .svg {
   margin-top: -10px;
   margin-bottom: -10px;
@@ -371,7 +362,7 @@
   display: block;
   margin-top: -100px;
   padding-top: 100px;
-  margin-bottom: -150px; /* tarik wave agar menutup section services */
+  margin-bottom: -150px; 
   pointer-events: none;
 }
 
@@ -462,7 +453,7 @@
 .wave-services-contact {
   width: 100%;
   display: block;
-  margin-bottom: -90px; /* tarik wave agar menutup section services */
+  margin-bottom: -90px; 
   margin-top: -250px;
   pointer-events: none;
 }
@@ -480,7 +471,7 @@
   padding-bottom: 40px;
 }
 
-.contact .contact-box .box .fa-star {
+.contact .contact-box .box .fa-envelope {
   color: goldenrod;
   font-size: 70px;
   margin-bottom: 20px;
@@ -731,7 +722,7 @@
   display: block;
   margin-top: -200px;
   padding-top: 100px;
-  margin-bottom: -150px; /* tarik wave agar menutup section services */
+  margin-bottom: -150px; 
   pointer-events: none;
   }
 
