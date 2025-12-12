@@ -758,6 +758,10 @@
     font-size: 34px;
   }
 
+  .header .header-box .title h2{
+    font-size: 28px;
+  }
+
   .header .header-box .title p {
     font-size: 12px;
   }
@@ -797,6 +801,10 @@
     font-size: 28px;
   }
 
+  .header .header-box .title h2{
+    font-size: 24px;
+  }
+
   .header .header-box .title p {
     font-size: 10px;
   }
@@ -815,6 +823,10 @@
   .header .header-box .title h1 {
     font-size: 25px;
     line-height: 1.5;
+  }
+
+    .header .header-box .title h2{
+    font-size: 20px;
   }
 
   .header .header-box .title p {
