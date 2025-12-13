@@ -5,6 +5,26 @@ const buttons = document.querySelectorAll(".details-btn");
 const closes = document.querySelectorAll(".popup .close");
 const pastelHover = document.querySelectorAll(".pastel-hover span");
 
+document.addEventListener("contextmenu", e => {
+  if (e.target.closest("img")) e.preventDefault();
+});
+
+document.addEventListener("dragstart", e => {
+  if (e.target.closest("img")) e.preventDefault();
+});
+
+document.addEventListener("contextmenu", function (e) {
+  if (e.target.closest(".popup img")) {
+    e.preventDefault();
+  }
+});
+
+document.addEventListener("dragstart", function (e) {
+  if (e.target.closest(".popup img")) {
+    e.preventDefault();
+  }
+});
+
 menuBar.addEventListener("click", () => {
   menuBar.classList.toggle("is-active");
   menuNavigation.classList.toggle("menu-active");
