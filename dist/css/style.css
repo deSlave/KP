@@ -17,6 +17,17 @@
   --tertiary-text-color-opacity: #111111a1;
 }
 
+img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.popup img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .button-logo{
   background: none;
   border: none;
