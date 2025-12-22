@@ -1,0 +1,35 @@
+.site-footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 14px;
+  padding: 20px 16px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  line-height: 1.6;
+  color: var(--secondary-text-color-opacity);
+}
+.footer-right {
+  color: var(--secondary-text-color-opacity);
+}
+
+.footer-right span {
+  font-weight: 600;
+  color: var(--secondary-text-color-opacity);
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
