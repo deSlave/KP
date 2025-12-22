@@ -1,6 +1,0 @@
-User-agent: Googlebot-Image
-Disallow: assets/img/fo.png
-Disallow: assets/img/cof.png
-Disallow: assets/img/hm.png
-Disallow: assets/icon/mainicon.png
-Disallow: assets/icon/logocenil.png
