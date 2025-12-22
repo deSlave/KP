@@ -213,12 +213,14 @@ img {
 }
 
 .about {
+  position: relative;
   padding-top: 10px;
-  margin-bottom: -50px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  margin-bottom: 0; /* hapus negatif agar tidak bentrok */
   background-color: var(--primary-color);
   text-align: center;
   scroll-margin-top: 180px;
+  z-index: 1;
 }
 
 .about .fa-user{
@@ -370,14 +372,14 @@ img {
 }
 
 .wave-about-service {
+  position: relative;
   width: 100%;
   display: block;
-  margin-top: -100px;
-  padding-top: 100px;
-  margin-bottom: -150px; 
+  margin-top: -1px;   /* tarik wave ke atas */
+  margin-bottom: -150px;
+  z-index: 2;           /* timpa section atas */
   pointer-events: none;
 }
-
 
 .services {
   padding-top: 210px;
@@ -759,22 +761,12 @@ img {
   }
 
   .about{
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     padding-top: 100px;
   }
 
-  .wave-about-service {
-  width: 100%;
-  display: block;
-  margin-top: -200px;
-  padding-top: 100px;
-  margin-bottom: -150px; 
-  pointer-events: none;
-  }
-
   .services{
-    margin-top: 100px;
-
+    margin-top: -100px;
   }
 
   .services .services-box .boxes .boxs {
